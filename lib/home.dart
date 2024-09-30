@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weekengo_front/setting.dart';
 import 'widget/square_card_button.dart';
 import 'theme/color_palette.dart';
 import 'widget/card_button.dart';
@@ -24,7 +25,14 @@ class _HomeState extends State<Home> {
         ),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Setting(),
+                ),
+              );
+            },
             icon: const Icon(Icons.menu),
           ),
         ],
@@ -91,7 +99,8 @@ class _HomeState extends State<Home> {
                             eventType: "음식점",
                             subTitle: "10/05 - 10/08",
                             likePeopleCount: "13",
-                            webViewUrl: "https://m.place.naver.com/restaurant/1930066846/home?entry=pll",
+                            webViewUrl:
+                                "https://m.place.naver.com/restaurant/1930066846/home?entry=pll",
                           ),
                           CardButton(
                             title: "관악 강감찬 축제",
@@ -137,7 +146,8 @@ class _HomeState extends State<Home> {
                           ),
                           SquareCardButton(
                             title: "백흑요리사 식당 모음",
-                            description: "천종원: 아니 이런 요리들은 누가 만든거야?\n???: 나야, 들기름",
+                            description:
+                                "천종원: 아니 이런 요리들은 누가 만든거야?\n???: 나야, 들기름",
                           ),
                         ],
                       ),
