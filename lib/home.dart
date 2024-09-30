@@ -3,9 +3,7 @@ import 'theme/color_palette.dart';
 import 'widget/card_button.dart';
 
 class Home extends StatefulWidget {
-  const Home({super.key, required this.title});
-
-  final String title;
+  const Home({super.key});
 
   @override
   State<Home> createState() => _HomeState();
@@ -25,7 +23,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        title: Text(widget.title),
+        title: const Text('이번 주말에 뭐하지?'),
         titleTextStyle: const TextStyle(
           color: Color(ColorPalette.blue),
           fontWeight: FontWeight.bold,

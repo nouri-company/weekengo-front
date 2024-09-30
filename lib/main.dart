@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
             ColorScheme.fromSeed(seedColor: const Color(ColorPalette.blue)),
         useMaterial3: true,
       ),
-      home: const EventWebView(url:"https://flutter.dev"),
+      home: const Home(),
     );
   }
 }
