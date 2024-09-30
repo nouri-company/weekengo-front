@@ -39,7 +39,7 @@ class _CardButtonState extends State<CardButton> {
       width: screenWidth - 10,
       height: 100, // 높이는 필요에 따라 조정
       child: Container(
-        margin: const EdgeInsets.fromLTRB(10, 2, 10, 2),
+        margin: const EdgeInsets.fromLTRB(6, 3, 6, 3),
         decoration: BoxDecoration(
           border: Border.all(
             width: 1,
