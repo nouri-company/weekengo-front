@@ -4,6 +4,7 @@ class ColorPalette {
   static const white = Color(0xFFFFFFFF);
   static const black = Color(0xFF151818);
   static const background = Color(0xFF373D44);
+  static const toast = Color(0xFF151818);
 
   static const primary50 = Color(0xFFE9F5FF);
   static const primary100 = Color(0xFFB9E1FF);
