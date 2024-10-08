@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme:
             ColorScheme.fromSeed(seedColor: const Color(ColorPalette.blue)),
         useMaterial3: true,
+        fontFamily: "Pretendard",
       ),
       home: const Home(),
     );
