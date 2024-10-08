@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:weekengo_front/theme/color_palette.dart';
 import 'package:weekengo_front/theme/text_styles.dart';
 
 class SmOutlinedButton extends StatelessWidget {
   final String text;
+  final String? icon;
   final VoidCallback onPressed;
   final double width;
   final double height;
@@ -11,6 +13,7 @@ class SmOutlinedButton extends StatelessWidget {
   const SmOutlinedButton({
     super.key,
     required this.text,
+    this.icon,
     required this.onPressed,
     this.width = double.infinity,
     this.height = 53,
@@ -48,9 +51,23 @@ class SmOutlinedButton extends StatelessWidget {
             ),
           ),
         ),
-        child: Text(
-          text,
-          style: TextStyles.titleXSmall(color:ColorPalette.primary500),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            if (icon != null)
+              SvgPicture.asset(
+                'assets/icons/${icon!}',
+                width: 16,
+                height: 16,
+                colorFilter: const ColorFilter.mode(ColorPalette.primary500, BlendMode.srcIn),
+              ),
+            if (icon != null) const SizedBox(width: 4), // 이모지와 텍스트 사이의 간격
+            Text(
+              text,
+              style: TextStyles.titleXSmall(color:ColorPalette.primary500),
+            ),
+          ],
         ),
       ),
     );
