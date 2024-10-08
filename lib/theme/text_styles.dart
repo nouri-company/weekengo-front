@@ -153,6 +153,14 @@ class TextStyles {
         color: color,
       );
 
+  static TextStyle bodyXSmall({Color color = ColorPalette.black}) => TextStyle(
+        fontFamily: fontFamily,
+        fontSize: 12,
+        fontWeight: FontWeight.normal,
+        height: 1.6,
+        color: color,
+      );
+
   static TextStyle captionLarge({Color color = ColorPalette.black}) =>
       TextStyle(
         fontFamily: fontFamily,
