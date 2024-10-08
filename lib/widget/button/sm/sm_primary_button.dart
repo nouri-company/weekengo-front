@@ -16,7 +16,7 @@ class SmPrimaryButton extends StatelessWidget {
     this.icon,
     required this.onPressed,
     this.width = double.infinity,
-    this.height = 53,
+    this.height = 38,
   });
 
   @override

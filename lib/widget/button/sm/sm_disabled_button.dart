@@ -14,7 +14,7 @@ class SmDisabledButton extends StatelessWidget {
     required this.text,
     this.icon,
     this.width = double.infinity,
-    this.height = 53,
+    this.height = 38,
   });
 
   @override
@@ -27,23 +27,32 @@ class SmDisabledButton extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            if (icon != null)
-              SvgPicture.asset(
-                'assets/icons/${icon!}',
-                width: 16,
-                height: 16,
-                colorFilter: const ColorFilter.mode(ColorPalette.grey300, BlendMode.srcIn),
-              ),
-            if (icon != null) const SizedBox(width: 4), // 이모지와 텍스트 사이의 간격
-            Text(
-              text,
-              style: TextStyles.titleXSmall(color:ColorPalette.grey300),
+        child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(12),
+            border: const Border.fromBorderSide(
+              BorderSide(color: ColorPalette.grey100),
             ),
-          ],
+          ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              if (icon != null)
+                SvgPicture.asset(
+                  'assets/icons/${icon!}',
+                  width: 16,
+                  height: 16,
+                  colorFilter: const ColorFilter.mode(
+                      ColorPalette.grey300, BlendMode.srcIn),
+                ),
+              if (icon != null) const SizedBox(width: 4), // 이모지와 텍스트 사이의 간격
+              Text(
+                text,
+                style: TextStyles.titleXSmall(color: ColorPalette.grey300),
+              ),
+            ],
+          ),
         ),
       ),
     );
