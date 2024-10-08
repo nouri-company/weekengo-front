@@ -4,14 +4,12 @@ import 'package:weekengo_front/theme/text_styles.dart';
 
 class SmDisabledButton extends StatelessWidget {
   final String text;
-  final VoidCallback onPressed;
   final double width;
   final double height;
 
   const SmDisabledButton({
     super.key,
     required this.text,
-    required this.onPressed,
     this.width = double.infinity,
     this.height = 53,
   });
