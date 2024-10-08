@@ -52,7 +52,7 @@ class _SettingState extends State<Setting> {
                     flex: 1,
                     child: Switch(
                       value: isChecked,
-                      activeColor: const Color(ColorPalette.blue),
+                      activeColor: ColorPalette.primary500,
                       onChanged: (bool value) {
                         setState(() {
                           isChecked = !isChecked;
@@ -71,7 +71,7 @@ class _SettingState extends State<Setting> {
               decoration: BoxDecoration(
                 border: Border.all(
                   width: 0.5,
-                  color: const Color(ColorPalette.grey),
+                  color: ColorPalette.grey500,
                 ),
               ),
             ),
@@ -124,7 +124,7 @@ class _SettingState extends State<Setting> {
             margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
             child: const CircleAvatar(
               radius: 48, // Image radius
-              backgroundColor: Color(ColorPalette.grey),
+              backgroundColor: ColorPalette.background,
               child: Icon(
                 Icons.person,
                 size: 50,

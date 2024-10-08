@@ -43,7 +43,7 @@ class _CardButtonState extends State<CardButton> {
         decoration: BoxDecoration(
           border: Border.all(
             width: 1,
-            color: const Color(ColorPalette.grey),
+            color: ColorPalette.grey100,
           ),
           borderRadius: const BorderRadius.all(
             Radius.circular(10.0),
@@ -72,7 +72,7 @@ class _CardButtonState extends State<CardButton> {
                     border: Border(
                       right: BorderSide(
                         width: 1,
-                        color: Color(ColorPalette.grey),
+                        color: ColorPalette.grey100,
                       ),
                     ),
                   ),
@@ -144,7 +144,7 @@ class _CardButtonState extends State<CardButton> {
                       border: Border(
                         bottom: BorderSide(
                           width: 1,
-                          color: Color(ColorPalette.grey),
+                          color: ColorPalette.grey100,
                         ),
                       ),
                     ),

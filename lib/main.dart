@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'error_modal.dart';
 import 'home.dart';
-import 'event_webview.dart';
 import 'theme/color_palette.dart';
 
 void main() {
@@ -16,12 +16,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme:
-            ColorScheme.fromSeed(seedColor: const Color(ColorPalette.blue)),
+        colorScheme: ColorScheme.fromSeed(seedColor: ColorPalette.primary500),
         useMaterial3: true,
         fontFamily: "Pretendard",
       ),
-      home: const Home(),
+      home: const ErrorModal(title: "대표님이 울지말래요", content: "칭찬도 받고 격려도 받고 완전 럭키비키자낭🤭"),
     );
   }
 }
