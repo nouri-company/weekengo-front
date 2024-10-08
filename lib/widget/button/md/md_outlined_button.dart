@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weekengo_front/theme/color_palette.dart';
+import 'package:weekengo_front/theme/text_styles.dart';
 
 class MdOutlinedButton extends StatelessWidget {
   final String text;
@@ -49,10 +50,7 @@ class MdOutlinedButton extends StatelessWidget {
         ),
         child: Text(
           text,
-          style: const TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.bold,
-          ),
+          style: TextStyles.titleSmall(color:ColorPalette.primary500),
         ),
       ),
     );

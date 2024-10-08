@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weekengo_front/theme/color_palette.dart';
+import 'package:weekengo_front/theme/text_styles.dart';
 
 class MdPrimaryButton extends StatelessWidget {
   final String text;
@@ -34,11 +35,7 @@ class MdPrimaryButton extends StatelessWidget {
           child: Center(
             child: Text(
               text,
-              style: const TextStyle(
-                color: ColorPalette.white,
-                fontSize: 16,
-                fontWeight: FontWeight.bold,
-              ),
+              style: TextStyles.titleSmall(color:ColorPalette.white),
             ),
           ),
         ),
