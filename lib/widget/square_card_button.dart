@@ -54,7 +54,7 @@ class _SquareCardButtonState extends State<SquareCardButton> {
           decoration: BoxDecoration(
             border: Border.all(
               width: 1,
-              color: const Color(ColorPalette.grey),
+              color: ColorPalette.grey100,
             ),
             borderRadius: const BorderRadius.all(
               Radius.circular(10.0),
